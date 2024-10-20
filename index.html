@@ -9,21 +9,38 @@
             background-color: #800000; /* لون العنابي */
             color: white; /* تغيير لون النص إلى الأبيض */
         }
+        #lyrics {
+            margin-top: 20px;
+            font-size: 18px; /* حجم الخط */
+        }
     </style>
 </head>
 <body>
-    <h1>يا هلا بضيا دنياي</h1>
+    <h1>يا هلا ضيا دنياي</h1>
     <p>اضغطي يبعد حيي👇🏻</p>
     <ul>
         <li><a href="#" onclick="showVideo('https://www.youtube.com/embed/T3IZDlGy8Jk')" style="color: white;">❤️</a></li>
     </ul>
     <iframe id="videoPlayer" width="600" height="400" style="display:none;" frameborder="0" allowfullscreen></iframe>
 
+    <div id="lyrics" style="display:none;">
+        <p>اهداء للقمره❤️</p>
+        <p>انا احبك<br>انا احبك ..<br>ولا فكرت اخونك</p>
+        <p>وقلبي بالهوى ..<br>عايش يصونك</p>
+        <p>احلف ورب البيت ..<br>غيرك ما حبيت</p>
+        <p>وعمري يا غلا ..<br>فدوه عيونك</p>
+        <p>آه يا عمري عليك ..<br>كل شي يعجبني فيك</p>
+        <p>ولو تغيب اشوي عني ..<br>انا يا عمري اجيك</p>
+        <p>انت كل عمري فداك ..<br>والزمن يحلى معاك</p>
+        <p>انت ما خيبت ظني ..<br>والوفا كله وفاك</p>
+    </div>
+
     <script>
         function showVideo(videoSrc) {
             var videoPlayer = document.getElementById('videoPlayer');
             videoPlayer.src = videoSrc;
             videoPlayer.style.display = 'block';
+            document.getElementById('lyrics').style.display = 'block'; // إظهار كلمات الأغنية
         }
     </script>
 </body>
