@@ -9,20 +9,15 @@
     <h1>Welcome to My Site</h1>
     <p>Please choose an option:</p>
     <ul>
-        <li><a href="#" onclick="showVideo('video1.mp4')">Option 1</a></li>
-        <li><a href="#" onclick="showVideo('video2.mp4')">Option 2</a></li>
+        <li><a href="#" onclick="showVideo('https://www.youtube.com/embed/T3IZDlGy8Jk')">❤️</a></li>
     </ul>
-    <video id="videoPlayer" width="600" controls style="display:none;">
-        <source id="videoSource" src="" type="video/mp4">
-    </video>
+    <iframe id="videoPlayer" width="600" height="400" style="display:none;" frameborder="0" allowfullscreen></iframe>
 
     <script>
         function showVideo(videoSrc) {
             var videoPlayer = document.getElementById('videoPlayer');
-            var videoSource = document.getElementById('videoSource');
-            videoSource.src = videoSrc;
+            videoPlayer.src = videoSrc;
             videoPlayer.style.display = 'block';
-            videoPlayer.load();
         }
     </script>
 </body>
